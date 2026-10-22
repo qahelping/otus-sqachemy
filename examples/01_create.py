@@ -20,6 +20,7 @@ cursor.execute(
     "INSERT INTO homeworks (title) VALUES (?)",
     ("SQL SELECT",),
 )
+
 # Этот id нужен, чтобы связать сдачу с только что созданным заданием.
 homework_id = cursor.lastrowid
 

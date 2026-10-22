@@ -11,7 +11,7 @@ print(row)
 
 cursor.execute(
     "UPDATE submissions SET accepted = ? WHERE id = ?",
-    (False, 1),
+    (True, 1),
 )
 
 connection.commit()

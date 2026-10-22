@@ -7,8 +7,8 @@ cursor = connection.cursor()
 
 cursor.execute("""
 SELECT *
-FROM submissions
-
+FROM students
+WHERE id > 3
 """)
 
 rows = cursor.fetchall()
@@ -28,7 +28,6 @@ WHERE  submissions.accepted = 1
 """)
 
 rows = cursor.fetchall()
-
 for row in rows:
     student_name = row[0]
     homework_title = row[1]

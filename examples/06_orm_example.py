@@ -16,6 +16,12 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 student = Student(name="Анна Петрова")
+# cursor.execute(
+#     "INSERT INTO students (name) VALUES (?)",
+#     ("Анна Петрова",),
+# )
+
+
 homework = Homework(title="SQLAlchemy ORM")
 submission = Submission(student=student, homework=homework, accepted=False)
 

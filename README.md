@@ -15,6 +15,8 @@ python examples/02_read.py
 python examples/03_update.py
 python examples/04_delete.py
 python examples/05_select_examples.py
+python examples/07_cursor_values.py
+python examples/08_select_keywords.py
 ```
 
 ## Запуск ORM-примера
